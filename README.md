@@ -100,8 +100,10 @@ git clone [https://github.com/tuusuario/Transferencia.API.git](https://github.co
 ```
 
 2. Configura tu base de datos en `appsettings.json`.
-
-3. Ejecuta el proyecto:
+3. Ejecutar los siguientes scripts en la base de datos :
+SQL/1.CrearBDD.sql
+SQL/2.CrearTablas.sql 
+4. Ejecuta el proyecto:
 ```bash
 dotnet run --project Transferencia.API
 ```
