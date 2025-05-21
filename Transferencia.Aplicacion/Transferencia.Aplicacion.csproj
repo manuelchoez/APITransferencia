@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Transferencia.Dominio\Transferencia.Dominio.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Constantes\" />
-  </ItemGroup>
-
 </Project>
