@@ -33,5 +33,9 @@ namespace Transferencia.Aplicacion.Constantes
         public const string MsjValiacionNombre = "nombre es obligatorio";
         public const string MsjValiacionDocumentId = "documentid es obligatorio";
 
+        public const string MsjValiacionMontoIncorrecto = "Monto Incorrecto";
+        public const string MsjMovimientoCreado = "Transaccion reralizada correctamente";
+        public const string MsjBilleteraSinFondos = "Sin fondos";
+        public const string MsjValiacionType = "Tipo de movimiento incorrecto";
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Transferencia.Dominio.Entidades;
 
@@ -29,6 +30,6 @@ public partial class Movimiento
     /// Fecha de la transaccion
     /// </summary>
     public DateTime? CreateAt { get; set; }
-
+    [JsonIgnore]
     public virtual Billetera? Wallet { get; set; }
 }

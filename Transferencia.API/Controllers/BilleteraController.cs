@@ -27,7 +27,7 @@ namespace Transferencia.API.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        [AllowAnonymous]
         [Route("ObtenerPorId")]
         public async Task<Response<Billetera?>> ObtenerPorId(string documentId)
         {

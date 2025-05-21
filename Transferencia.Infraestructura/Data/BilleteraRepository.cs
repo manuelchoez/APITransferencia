@@ -43,7 +43,7 @@ namespace Transferencia.Infraestructura.Data
 
         public async Task<Billetera?> ObtenerPorIdAsync(string documentoId)
         {
-            return await _dadtransfContext.Billeteras.FirstOrDefaultAsync(b => b.Documentid == documentoId);
+            return await _dadtransfContext.Billeteras.Include(b => b.Movimientos).FirstOrDefaultAsync(b => b.Documentid == documentoId);
         }
     }
 }

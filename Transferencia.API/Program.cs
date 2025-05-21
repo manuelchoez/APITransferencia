@@ -44,6 +44,8 @@ builder.Services.AddScoped<IBilleteraRepository, BilleteraRepository>();
 builder.Services.AddScoped<IBilleteraService, BilleteraService>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IMovimientoRepository, MovimientoRepository>();
+builder.Services.AddScoped<IMovimientoService, MovimientoService>();
 Log.Logger = new SerilogHelper(builder.Configuration)
     .SerilogConfiguracion("Transferencia.API", builder.Configuration.GetConnectionString("DefaultConnection"))
     .CreateLogger();
